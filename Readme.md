@@ -20,12 +20,14 @@ For example, the commonly used CDN https://cdn.jsdelivr.net may occasionally go 
 The script enumerates all .md files and replaces the image link prefixes with the new CDN.
 
 Usage
-	1.	View the manual
+1.	View the manual
 
 python EasyReplace.py -h
 usage: EasyReplace.py [-h] -dir DIR -old OLD -new NEW [-clear] [-drawback]
 
+```
 e.g. python EasyReplace.py -dir "/Users/fxw/OneDrive/note" -old "https://cdn.jsdelivr.net" -new "http://fastly.jsdelivr.net"
+```
 
 options:
   -h, --help  show this help message and exit
@@ -35,16 +37,18 @@ options:
   -clear      Clear all .back files
   -drawback   Restore all .back files
 
-	2.	Replace image links: The program will enumerate all .md files, replace the image link prefixes with the new CDN, and generate a backup file with the .back extension.
+2.	Replace image links: The program will enumerate all .md files, replace the image link prefixes with the new CDN, and generate a backup file with the .back extension.
 
 For example:
-
+```python
 python EasyReplace.py -dir "/Users/fxw/OneDrive/note" -old "https://cdn.jsdelivr.net" -new "http://fastlyjsdelivr.net"
+```
+3.	(Optional) Revert changes by restoring the .back files:
 
-	3.	(Optional) Revert changes by restoring the .back files:
-
+```python
 python EasyReplace.py -dir "/Users/fxw/OneDrive/note" -old "https://cdn.jsdelivr.net" -new "http://fastlyjsdelivr.net" -drawback
-
-	4.	(Optional) Delete the backup .back files:
-
+```
+4.	(Optional) Delete the backup .back files:
+```python
 python EasyReplace.py -dir "/Users/fxw/OneDrive/note" -old "https://cdn.jsdelivr.net" -new "http://fastlyjsdelivr.net" -clear
+```
