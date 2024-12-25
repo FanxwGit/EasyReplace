@@ -21,10 +21,6 @@ The script enumerates all .md files and replaces the image link prefixes with th
 
 Usage
 1.	View the manual
-
-python EasyReplace.py -h
-usage: EasyReplace.py [-h] -dir DIR -old OLD -new NEW [-clear] [-drawback]
-
 ```
 e.g. python EasyReplace.py -dir "/Users/fxw/OneDrive/note" -old "https://cdn.jsdelivr.net" -new "http://fastly.jsdelivr.net"
 
