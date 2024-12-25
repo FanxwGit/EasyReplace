@@ -27,7 +27,6 @@ usage: EasyReplace.py [-h] -dir DIR -old OLD -new NEW [-clear] [-drawback]
 
 ```
 e.g. python EasyReplace.py -dir "/Users/fxw/OneDrive/note" -old "https://cdn.jsdelivr.net" -new "http://fastly.jsdelivr.net"
-```
 
 options:
   -h, --help  show this help message and exit
@@ -36,6 +35,7 @@ options:
   -new NEW    The new text to change
   -clear      Clear all .back files
   -drawback   Restore all .back files
+```
 
 2.	Replace image links: The program will enumerate all .md files, replace the image link prefixes with the new CDN, and generate a backup file with the .back extension.
 
